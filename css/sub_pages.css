@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+html {
+  width: 100%;
+  height: auto;
+  background: #404040;
+}
+
+body {
+  top: 5%;
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .5;
+  transition: .25s;
+}
+
+.red {
+  color: #ff4544;
+}
+
+.yellow {
+  color: #ffd766;
+}
+
+.green {
+  color: #33DD88;
+}
+
+.blue {
+  color: #3388ff;
+}
+
+.purple {
+  color: #AA88EE;
+}
+
+.content {
+  width: 50%;
+  height: auto;
+
+  position: relative;
+  text-align: center;
+}
+
+.content img {
+  border-radius: 50%;
+  width: 40%;
+  left: 50%;
+  right:50%;
+  height:auto;
+  position: relative;
+}
+
+.social_media {
+  display: inline-block;
+}
+
+.social_media_pics img {
+  border-radius: 50%;
+  width: 10%;
+  height:auto;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content h1 {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 300%;
+
+  left: 50%;
+  right:50%;
+
+  color: #D0D0D0;
+}
+
+.content p {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align:left;
+  left: 50%;
+  right:50%;
+
+  line-height: 1.5;
+
+  color: #D0D0D0;
+}
+
+a:hover img[src="imgs/social_media/linkedin.png"] {
+  background: #3388ff;
+}
+
+a:hover img[src="imgs/social_media/github.png"] {
+  background: #33DD88;
+}
+
+a:hover img[src="imgs/social_media/instagram.png"] {
+  background: #ff4544;
+}
+
+.credits {
+  width: 100%
+}
+
+.credits p {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 150%;
+  text-transform: uppercase;
+  text-align: center;
+  left: 50%;
+  right:50%;
+
+  line-height: 2;
+}
