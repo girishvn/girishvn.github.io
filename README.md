@@ -1,4 +1,4 @@
-# personal_website
+# Personal Website
 This repo contains the source code and images for my personal website
 
 The repo is organized in the following way:
