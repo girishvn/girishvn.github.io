@@ -1,19 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 
+/*************************** ALL SUB PAGES STYLING ****************************/
+/* HTML STYLING */
 html {
   width: 100%;
   height: auto;
-  background: #404040;
+  background: #454545;
 }
 
-body {
-  top: 5%;
-  width: 100%;
-  height: auto;
-
-  position: absolute;
-}
-
+/* GENERIC TAGS */
 a {
   text-decoration: none;
 }
@@ -22,17 +17,18 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  opacity: .5;
+p a:hover {
+  filter: brightness(125%);
   transition: .25s;
 }
 
+/* COLOR DEFINITIONS */
 .red {
-  color: #ff4544;
+  color: #ee4544;
 }
 
 .yellow {
-  color: #ffd766;
+  color: #eed766;
 }
 
 .green {
@@ -47,8 +43,30 @@ a:hover {
   color: #AA88EE;
 }
 
+/* HEADER STYLING */
+header a img {
+  margin-top: 0%;
+  margin-left: 3%;
+
+  filter: invert(80%);
+}
+
+header a:hover img{
+  filter: invert(100%);
+}
+
+/* BODY STYLING */
+body {
+  top: 5%;
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+}
+
+/* CONTENT CLASS STYLING */
 .content {
-  width: 50%;
+  width: 100%;
   height: auto;
 
   position: relative;
@@ -57,24 +75,14 @@ a:hover {
 
 .content img {
   border-radius: 50%;
-  width: 40%;
-  left: 50%;
-  right:50%;
+  width: 20%;
   height:auto;
   position: relative;
 }
 
-.social_media {
-  display: inline-block;
-}
-
-.social_media_pics img {
-  border-radius: 50%;
-  width: 10%;
-  height:auto;
-  position: relative;
-  margin-left: 10%;
-  margin-right: 10%;
+.content a:hover img[src="imgs/girish_pics/prof_pic.jpg"] {
+  transition: .25s;
+  filter: brightness(75%);
 }
 
 .content h1 {
@@ -83,51 +91,77 @@ a:hover {
   font-weight: 700;
   font-size: 300%;
 
-  left: 50%;
-  right:50%;
-
   color: #D0D0D0;
+
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
-.content p {
+/*************************** ABOUT ME PAGE STYLING ****************************/
+.content .writeup p {
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  font-size: 100%;
   text-transform: uppercase;
-  text-align:left;
-  left: 50%;
-  right:50%;
 
   line-height: 1.5;
 
   color: #D0D0D0;
+  display: inline-block;
+  text-align: left;
+
+  margin-top: 1%;
 }
 
-a:hover img[src="imgs/social_media/linkedin.png"] {
+/************************* SOCIAL MEDIA PAGE STYLING **************************/
+.content .social_media {
+  text-align: center;
+}
+
+.content .social_media_pics .icons a img {
+  border-radius: 50%;
+  width: 100%;
+  height:auto;
+  position: relative;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 50%;
+}
+
+.content .social_media_pics .icons {
+  display: inline-block;
+  width: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+a:hover img[src="imgs/icon_pics/linkedin.png"] {
   background: #3388ff;
 }
 
-a:hover img[src="imgs/social_media/github.png"] {
+a:hover img[src="imgs/icon_pics/github.png"] {
   background: #33DD88;
 }
 
-a:hover img[src="imgs/social_media/instagram.png"] {
+a:hover img[src="imgs/icon_pics/instagram.png"] {
   background: #ff4544;
 }
 
-.credits {
-  width: 100%
-}
-
-.credits p {
+/**************************** CREDITS PAGE STYLING ****************************/
+.content .credits p {
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 150%;
   text-transform: uppercase;
   text-align: center;
-  left: 50%;
-  right:50%;
 
   line-height: 2;
+
+  color: #D0D0D0;
+  display: inline-block;
+  text-align: left;
+
+  margin-top: 1%;
 }
