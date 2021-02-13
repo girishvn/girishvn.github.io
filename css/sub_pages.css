@@ -1,14 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
 
 /*************************** ALL SUB PAGES STYLING ****************************/
 /* HTML STYLING */
 html {
   width: 100%;
   height: auto;
-  /*background: #454545;*/
-  /*background: #3399FF;*/
-  /*background: #5b9aFF;*/
-  background: #448cff;
+  background: #454545;
 }
 
 /* GENERIC TAGS */
@@ -20,54 +17,30 @@ a:visited {
   text-decoration: none;
 }
 
-/*p a:hover {
+p a:hover {
   filter: brightness(125%);
   transition: .25s;
-}*/
+}
 
 /* COLOR DEFINITIONS */
 .red {
-  color: #333333;
-}
-
-.red:hover {
-  color: #FF4544;
+  color: #ee4544;
 }
 
 .yellow {
-  color: #333333;
-}
-
-.yellow:hover {
-  color: #ffe766;
+  color: #eed766;
 }
 
 .green {
-  color: #333333;
-}
-
-.green:hover {
   color: #33DD88;
 }
 
 .blue {
-  color: #333333;
-}
-
-.blue:hover {
   color: #3388ff;
 }
 
 .purple {
-  color: #333333;
-}
-
-.purple:hover {
-  color: #AA88FF;
-}
-
-.black {
-  color: #333333;
+  color: #AA88EE;
 }
 
 /* HEADER STYLING */
@@ -75,12 +48,11 @@ header a img {
   margin-top: 0%;
   margin-left: 3%;
 
-  filter: invert(100%);
+  filter: invert(80%);
 }
 
-header a:hover {
-  filter: invert(80%);
-
+header a:hover img{
+  filter: invert(100%);
 }
 
 /* BODY STYLING */
@@ -110,8 +82,7 @@ body {
 
 .content a:hover img[src="imgs/girish_pics/prof_pic.jpg"] {
   transition: .25s;
-  /*filter: brightness(75%);*/
-  box-shadow: 0 0 0 10pt #333333;
+  filter: brightness(75%);
 }
 
 .content h1 {
@@ -120,7 +91,7 @@ body {
   font-weight: 700;
   font-size: 300%;
 
-  color: #FFFFFF;
+  color: #D0D0D0;
 
   margin-top: 0%;
   margin-bottom: 0%;
@@ -136,7 +107,7 @@ body {
 
   line-height: 1.5;
 
-  color: #FFFFFF;
+  color: #D0D0D0;
   display: inline-block;
   text-align: left;
 
@@ -166,7 +137,7 @@ body {
 }
 
 a:hover img[src="imgs/icon_pics/linkedin.png"] {
-  background: #AA88FF;
+  background: #3388ff;
 }
 
 a:hover img[src="imgs/icon_pics/github.png"] {
@@ -174,7 +145,7 @@ a:hover img[src="imgs/icon_pics/github.png"] {
 }
 
 a:hover img[src="imgs/icon_pics/instagram.png"] {
-  background: #FF4544;
+  background: #ff4544;
 }
 
 /**************************** CREDITS PAGE STYLING ****************************/
@@ -188,7 +159,7 @@ a:hover img[src="imgs/icon_pics/instagram.png"] {
 
   line-height: 2;
 
-  color: #FFFFFF;
+  color: #D0D0D0;
   display: inline-block;
   text-align: left;
 
