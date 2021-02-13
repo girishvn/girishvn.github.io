@@ -5,9 +5,6 @@
 html {
   width: 100%;
   height: auto;
-  /*background: #454545;*/
-  /*background: #3399FF;*/
-  /*background: #5b9aFF;*/
   background: #448cff;
 }
 
@@ -19,11 +16,6 @@ a {
 a:visited {
   text-decoration: none;
 }
-
-/*p a:hover {
-  filter: brightness(125%);
-  transition: .25s;
-}*/
 
 /* COLOR DEFINITIONS */
 .red {
@@ -80,7 +72,6 @@ header a img {
 
 header a:hover {
   filter: invert(80%);
-
 }
 
 /* BODY STYLING */
@@ -96,12 +87,11 @@ body {
 .content {
   width: 100%;
   height: auto;
-
   position: relative;
   text-align: center;
 }
 
-.content img {
+.content img[src="imgs/girish_pics/prof_pic.jpg"] {
   border-radius: 50%;
   width: 20%;
   height:auto;
@@ -110,7 +100,6 @@ body {
 
 .content a:hover img[src="imgs/girish_pics/prof_pic.jpg"] {
   transition: .25s;
-  /*filter: brightness(75%);*/
   box-shadow: 0 0 0 10pt #333333;
 }
 
@@ -126,8 +115,72 @@ body {
   margin-bottom: 0%;
 }
 
-/*************************** ABOUT ME PAGE STYLING ****************************/
-.content .writeup p {
+.content #project_buttons {
+  table-layout: fixed;
+  border-spacing:0 40px;
+}
+
+.content #project_buttons tr {
+  padding-bottom: 10px;
+}
+
+.content #project_buttons img {
+  border-radius: 50%;
+  width: 15%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.content #project_buttons img:hover {
+  transition: .25s;
+  box-shadow: 0 0 0 5pt #333333;
+}
+
+.content #project_buttons p {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.project_contents {
+  left: 50%;
+}
+
+.content .project_contents > div {
+  display: none;
+  margin-top: 2.5vw;
+}
+
+.content .project_contents img[src="imgs/icon_pics/cancel.png"] {
+  border-radius: 50%;
+  filter: invert(100%);
+  height: auto;
+  position: relative;
+  cursor: pointer;
+
+  margin-bottom: 1vw;
+}
+
+.content .project_contents img[src="imgs/icon_pics/cancel.png"]:hover {
+  filter: invert(20%);
+}
+
+.content .project_contents h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+.centered_imgs {
+  width: 100%;
+  text-align: center;
+}
+
+.project_contents p {
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -141,56 +194,13 @@ body {
   text-align: left;
 
   margin-top: 1%;
+  width: 50vw;
 }
 
-/************************* SOCIAL MEDIA PAGE STYLING **************************/
-.content .social_media {
-  text-align: center;
+#project_cont_4 img[src="imgs/project_pics/qualcomm_banner.png"] {
+  width: 40%;
 }
 
-.content .social_media_pics .icons a img {
-  border-radius: 50%;
-  width: 100%;
-  height:auto;
-  position: relative;
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-top: 50%;
-}
-
-.content .social_media_pics .icons {
-  display: inline-block;
-  width: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-a:hover img[src="imgs/icon_pics/linkedin.png"] {
-  background: #AA88FF;
-}
-
-a:hover img[src="imgs/icon_pics/github.png"] {
-  background: #33DD88;
-}
-
-a:hover img[src="imgs/icon_pics/instagram.png"] {
-  background: #FF4544;
-}
-
-/**************************** CREDITS PAGE STYLING ****************************/
-.content .credits p {
-  position: relative;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 150%;
-  text-transform: uppercase;
-  text-align: center;
-
-  line-height: 2;
-
-  color: #FFFFFF;
-  display: inline-block;
-  text-align: left;
-
-  margin-top: 1%;
+#project_cont_4 p img[src="imgs/project_pics/qualcomm_project_1.png"] {
+  width: 95%;
 }
