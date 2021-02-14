@@ -2,50 +2,60 @@
 <html>
 
   <head>
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/all_pages.css" rel="stylesheet">
     <link rel="icon" href="imgs/girish_pics/favicon_img.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   </head>
 
-  <header class="header">
-    <h1>
-      GIRISH NARAYANSWAMY
-    </h1>
-    <! Navigation Bar />
-    <nav class="main_nav">
-      <ul>
-        <li><a href="about_me.html"><span>About Me</span></a></li>
-        <li><a href="selected_work.html"><span>Selected Works</span></a></li>
-        <li><a href="social_media.html"><span>Social Media</span></a></li>
-        <li><a href="pdfs/resume.pdf"><span>Resume</span></a></li>
-        <li><a href="mailto:girish.narayanswamy@gmail.com"><span>Contact Me</span></a></li>
-        <li><a href="credits.html"><span>Credits</span></a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body>
-    <div class="background_img">
-        <img src="imgs/background_pics/img1.jpg">
-        <img src="imgs/background_pics/img2.jpg">
-        <img src="imgs/background_pics/img3.jpg">
-        <img src="imgs/background_pics/img4.jpg">
-        <img src="imgs/background_pics/img5.jpg">
+    <div class="content">
+
+      <a href="index.html"><img src="imgs/girish_pics/prof_pic.jpg"></a>
+
+      <h1>Girish Narayanswamy</h1>
+
+      <div class="writeup">
+        <p>
+          Hello! I am a PhD student working in the
+          <a href="https://ubicomplab.cs.washington.edu/" class="orange">UbiComp Lab</a>
+          at the <a href="https://www.washington.edu/" class="purple">University of Washington Seattle</a>.<br>
+          I am advised by <a href="https://homes.cs.washington.edu/~shwetak/" class="orange">Professor Shwetak Patel</a> and am affiliated with the
+          <a href="https://www.ece.uw.edu/" class="purple">ECE</a> and <a href="https://www.ece.uw.edu/" class="purple">CSE</a> departments. <br>
+          My interests lie at the intersection of learning (ML/AlI), signal processing, and embedded systems <br>
+          with an emphasis in Mobile Health Sensing and Learning for Low-Resource Platforms. <br>
+        </p>
+      </div>
+
+      <hr style="width:50%;height:2px;border-width:0;color:#333333;background-color:#333333">
+
+      <div class='other_info'>
+        <a href="pdfs/girishcv.pdf" class="white">CV</a>
+        <a href="about.html" class="white">About</a>
+
+        <div class="popup" onclick="popupTextFunct()">
+          <p class = "white">Contact</p><span class="popuptext" id="myPopup">girishvn 'at' uw 'dot' edu</span>
+        </div>
+
+      </div>
+
+      <hr style="width:50%;height:2px;border-width:0;color:#333333;background-color:#333333">
+
+      <div class="social_media_pics">
+        <div class="icons"><a href="https://www.linkedin.com/in/gnarayanswamy/"><img src="imgs/icon_pics/linkedin.png"></a></div>
+        <div class="icons"><a href="https://github.com/girishvn"><img src="imgs/icon_pics/github.png"></a></div>
+        <div class="icons"><a href="https://www.instagram.com/gvn_photos/"><img src="imgs/icon_pics/instagram.png"></a></div>
+      </div>
+
     </div>
-
-    <script type="text/javascript">
-      $(function() {
-        $('.background_img img:gt(0)').hide(); //hide all images after the first
-          setInterval(function () {
-            $('.background_img :first-child').fadeOut(3000).promise().done(function () {
-              $('.background_img :first-child').next('img').fadeIn(3000);
-            });
-
-            $('.background_img :first-child').promise().done(function () {
-              $('.background_img :first-child').appendTo('.background_img');
-            });
-        }, 8000); // 4 seconds
-      });
-    </script>
   </body>
+
+
+  <script>
+  // When the user clicks on div, open the popup
+  function popupTextFunct() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+
 </html>

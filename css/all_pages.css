@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
 
 /*************************** ALL SUB PAGES STYLING ****************************/
 /* HTML STYLING */
@@ -34,12 +34,20 @@ a:visited {
   color: #FF4544;
 }
 
+.orange {
+  color: #333333;
+}
+
+.orange:hover {
+  color: #FCA503;
+}
+
 .yellow {
   color: #333333;
 }
 
 .yellow:hover {
-  color: #ffe766;
+  color: #FFE766;
 }
 
 .green {
@@ -55,7 +63,7 @@ a:visited {
 }
 
 .blue:hover {
-  color: #3388ff;
+  color: #3388FF;
 }
 
 .purple {
@@ -70,6 +78,14 @@ a:visited {
   color: #333333;
 }
 
+.white {
+  color: #333333;
+}
+
+.white:hover {
+  color: #FFFFFF;
+}
+
 /* HEADER STYLING */
 header a img {
   margin-top: 0%;
@@ -80,7 +96,6 @@ header a img {
 
 header a:hover {
   filter: invert(80%);
-
 }
 
 /* BODY STYLING */
@@ -108,7 +123,7 @@ body {
   position: relative;
 }
 
-.content a:hover img[src="imgs/girish_pics/prof_pic.jpg"] {
+.content a:hover img{
   transition: .25s;
   /*filter: brightness(75%);*/
   box-shadow: 0 0 0 10pt #333333;
@@ -126,7 +141,7 @@ body {
   margin-bottom: 0%;
 }
 
-/*************************** ABOUT ME PAGE STYLING ****************************/
+/*************************** HOME PAGE and ABOUT ME PAGE STYLING ****************************/
 .content .writeup p {
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -143,7 +158,98 @@ body {
   margin-top: 1%;
 }
 
-/************************* SOCIAL MEDIA PAGE STYLING **************************/
+/*************************** OTHER INFO ON THE ABOUT ME PAGE STYLING ****************************/
+.content .other_info {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+
+  line-height: 1.5;
+
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  text-align: center;
+
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 43.5%;
+}
+
+.content .other_info a {
+  width: 30%;
+  font-weight: 700;
+  font-size: 100%;
+  margin: 0%
+}
+
+.content .other_info .popup{
+  width: 30%;
+  font-weight: 700;
+  font-size: 100%;
+}
+
+.content .other_info .popup p{
+  margin: 0%
+}
+/*************************** CONTACT POPUP CSS ****************************/
+/* Popup container - can be anything you want */
+.popup {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  position: absolute;
+  width: 30%;
+  background-color: #333333;
+  color: #FFFFFF;
+  text-align: center;
+
+  z-index: 1;
+  bottom: 120%;
+  left: 80%;
+  margin-left: -10%;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5%;
+  border-width: 5%;
+  border-style: solid;
+  border-color: #333333 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/************************* SOCIAL MEDIA ON HOME PAGE STYLING **************************/
 .content .social_media {
   text-align: center;
 }
@@ -155,7 +261,7 @@ body {
   position: relative;
   margin-left: 0%;
   margin-right: 0%;
-  margin-top: 50%;
+  margin-top: 10%;
 }
 
 .content .social_media_pics .icons {
