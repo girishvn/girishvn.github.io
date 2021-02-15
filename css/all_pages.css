@@ -116,14 +116,20 @@ body {
   text-align: center;
 }
 
-.content img {
+.content .profile_pics img {
   border-radius: 50%;
   width: 20%;
   height:auto;
   position: relative;
 }
 
-.content a:hover img{
+.content .profile_pics a:hover img[src="imgs/girish_pics/prof_pic.jpg"] {
+  transition: .25s;
+  /*filter: brightness(75%);*/
+  box-shadow: 0 0 0 10pt #333333;
+}
+
+.content .profile_pics a:hover img[src="imgs/girish_pics/about_me_pic.jpg"] {
   transition: .25s;
   /*filter: brightness(75%);*/
   box-shadow: 0 0 0 10pt #333333;
@@ -134,6 +140,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 300%;
+  text-transform: uppercase;
 
   color: #FFFFFF;
 
@@ -142,6 +149,40 @@ body {
 }
 
 /*************************** HOME PAGE and ABOUT ME PAGE STYLING ****************************/
+
+.content .writeup h2 {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 200%;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  display: inline-block;
+  text-align: left;
+
+  width: 55%;
+  margin-top: 3%;
+  margin-bottom: 0%;
+}
+
+.content .writeup h3 {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  display: inline-block;
+  text-align: left;
+
+  width: 55%;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+
 .content .writeup p {
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -155,7 +196,9 @@ body {
   display: inline-block;
   text-align: left;
 
+  width: 55%;
   margin-top: 1%;
+  margin-bottom: 0%;
 }
 
 /*************************** OTHER INFO ON THE ABOUT ME PAGE STYLING ****************************/
@@ -194,6 +237,38 @@ body {
 .content .other_info .popup p{
   margin: 0%
 }
+
+/************************* AFFILIATES ON ABOUT ME PAGE STYLING **************************/
+.content .affiliate_pics {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.content .affiliate_pics .aff_icons {
+  display: inline-block;
+  width: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.content .affiliate_pics .aff_icons a img {
+  position: -50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 0%
+}
+
+.content .affiliate_pics .aff_icons a img:hover {
+    opacity: .5;
+    transition: .25s;
+}
+
 /*************************** CONTACT POPUP CSS ****************************/
 /* Popup container - can be anything you want */
 .popup {
@@ -273,14 +348,17 @@ body {
 
 a:hover img[src="imgs/icon_pics/linkedin.png"] {
   background: #AA88FF;
+  transition: .25s;
 }
 
 a:hover img[src="imgs/icon_pics/github.png"] {
   background: #33DD88;
+  transition: .25s;
 }
 
 a:hover img[src="imgs/icon_pics/instagram.png"] {
   background: #FF4544;
+  transition: .25s;
 }
 
 /**************************** CREDITS PAGE STYLING ****************************/
