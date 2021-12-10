@@ -193,8 +193,8 @@ body {
 @media (max-device-width: 800px) {
 
   .content .profile_pics img {
-    border-radius: 80%;
-    width: 20%;
+    border-radius: 50%;
+    width: 40%;
     height:auto;
     position: relative;
   }
