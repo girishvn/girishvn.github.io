@@ -137,7 +137,6 @@ body {
 
 .content .writeup_wrapper {
   margin-top: -2%;
-
 }
 
 .content .writeup h2 {
@@ -189,6 +188,12 @@ body {
   width: 55%;
   margin-top: 1%;
   margin-bottom: 0%;
+}
+
+@media (max-device-width: 800px) {
+  .content .writeup p {
+    width: 75%;
+  }
 }
 
 /*************************** OTHER INFO ON THE ABOUT ME PAGE STYLING ****************************/
