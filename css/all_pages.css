@@ -5,10 +5,19 @@
 html {
   width: 100%;
   height: auto;
-  /*background: #454545;*/
-  /*background: #3399FF;*/
-  /*background: #5b9aFF;*/
-  background: #448cff;
+  overflow-x: hidden;
+}
+
+.index_pg {
+  background: #4d91ff;
+}
+
+.about_pg {
+  background: #9999ff;
+}
+
+.art_photos_pg {
+  background: #ffb8ff;
 }
 
 /* GENERIC TAGS */
@@ -19,11 +28,6 @@ a {
 a:visited {
   text-decoration: none;
 }
-
-/*p a:hover {
-  filter: brightness(125%);
-  transition: .25s;
-}*/
 
 /* COLOR DEFINITIONS */
 .red {
@@ -86,18 +90,6 @@ a:visited {
   color: #FFFFFF;
 }
 
-/* HEADER STYLING */
-header a img {
-  margin-top: 0%;
-  margin-left: 3%;
-
-  filter: invert(100%);
-}
-
-header a:hover {
-  filter: invert(80%);
-}
-
 /* BODY STYLING */
 body {
   top: 5%;
@@ -123,15 +115,8 @@ body {
   position: relative;
 }
 
-.content .profile_pics a:hover img[src="imgs/girish_pics/prof_pic.jpg"] {
+.content .profile_pics a:hover img {
   transition: .25s;
-  /*filter: brightness(75%);*/
-  box-shadow: 0 0 0 10pt #333333;
-}
-
-.content .profile_pics a:hover img[src="imgs/girish_pics/about_me_pic.jpg"] {
-  transition: .25s;
-  /*filter: brightness(75%);*/
   box-shadow: 0 0 0 10pt #333333;
 }
 
@@ -150,6 +135,11 @@ body {
 
 /*************************** HOME PAGE and ABOUT ME PAGE STYLING ****************************/
 
+.content .writeup_wrapper {
+  margin-top: -2%;
+
+}
+
 .content .writeup h2 {
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -162,7 +152,7 @@ body {
   text-align: left;
 
   width: 55%;
-  margin-top: 3%;
+  margin-top: 2%;
   margin-bottom: 0%;
 }
 
@@ -170,8 +160,9 @@ body {
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 100%;
+  font-size: 120%;
   text-transform: uppercase;
+  font-style: italic;
 
   color: #FFFFFF;
   display: inline-block;
@@ -181,7 +172,6 @@ body {
   margin-top: 1%;
   margin-bottom: 0%;
 }
-
 
 .content .writeup p {
   position: relative;
@@ -359,6 +349,31 @@ a:hover img[src="imgs/icon_pics/github.png"] {
 a:hover img[src="imgs/icon_pics/instagram.png"] {
   background: #FF4544;
   transition: .25s;
+}
+
+/**************************** ART / PHOTOS PAGE STYLING ****************************/
+.img_table {
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+}
+
+.img_row {
+  display: flex;
+  text-align: center;
+}
+
+/* Create two equal columns that sits next to each other */
+.img_column {
+  flex: 25%;
+  padding: 1% 0.5%;
+  text-align: center;
+}
+
+.img_column img {
+  margin-top: 2%;
+  width: 100%;
+  text-align: center;
 }
 
 /**************************** CREDITS PAGE STYLING ****************************/
