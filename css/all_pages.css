@@ -212,6 +212,14 @@ body {
     margin-bottom: 0%;
   }
 
+  .content .writeup h2 {
+    width: 75%;
+  }
+  
+  .content .writeup h3 {
+    width: 75%;
+  }
+
   .content .writeup p {
     width: 75%;
     font-size: 110%;
@@ -401,6 +409,13 @@ a:hover img[src="imgs/icon_pics/instagram.png"] {
   margin-top: 2%;
   width: 100%;
   text-align: center;
+}
+
+@media (max-device-width: 800px) {
+
+  .img_table {
+    width: 90%;
+  }
 }
 
 /**************************** CREDITS PAGE STYLING ****************************/
