@@ -227,6 +227,10 @@ body {
 }
 
 /*************************** OTHER INFO ON THE ABOUT ME PAGE STYLING ****************************/
+.content hr {
+  width: 50%;
+}
+
 .content .other_info {
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -244,6 +248,7 @@ body {
   margin-top: 1%;
   margin-bottom: 1%;
   width: 43.5%;
+  /*width: 80%;*/
 }
 
 .content .other_info a {
@@ -261,6 +266,21 @@ body {
 
 .content .other_info .popup p{
   margin: 0%
+}
+
+@media (max-device-width: 800px) {
+
+  .content hr {
+    width: 750%;
+  }
+  
+  .content .other_info {
+    width: 70%;
+  }
+
+  .content .other_info a {
+    font-size: 120%;
+  }
 }
 
 /************************* AFFILIATES ON ABOUT ME PAGE STYLING **************************/
@@ -390,7 +410,7 @@ a:hover img[src="imgs/icon_pics/instagram.png"] {
 .img_table {
   display: inline-block;
   text-align: center;
-  width: 80%;
+  width: 60%;
 }
 
 .img_row {
