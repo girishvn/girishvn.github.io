@@ -194,7 +194,7 @@ body {
 
   .content .profile_pics img {
     border-radius: 50%;
-    width: 75%;
+    width: 60%;
     height:auto;
     position: relative;
   }
@@ -271,7 +271,7 @@ body {
 @media (max-device-width: 800px) {
 
   .content hr {
-    width: 750%;
+    width: 75%;
   }
   
   .content .other_info {
