@@ -277,11 +277,9 @@ body {
   
   .content .other_info {
     width: 70%;
-  }
-
-  .content .other_info a {
     font-size: 150%;
   }
+  
 }
 
 /************************* AFFILIATES ON ABOUT ME PAGE STYLING **************************/
