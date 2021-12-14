@@ -280,7 +280,7 @@ body {
   }
 
   .content .other_info a {
-    font-size: 120%;
+    font-size: 150%;
   }
 }
 
@@ -407,6 +407,11 @@ a:hover img[src="imgs/icon_pics/instagram.png"] {
   transition: .25s;
 }
 
+@media (max-device-width: 800px) {
+  .content .social_media_pics .icons {
+    width: 10%;
+  }
+}
 /**************************** ART / PHOTOS PAGE STYLING ****************************/
 .img_table {
   display: inline-block;
