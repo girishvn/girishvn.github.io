@@ -213,15 +213,16 @@ body {
   }
 
   .content .writeup h2 {
-    width: 75%;
+    width: 85%;
+    font-size: 275%;
   }
   
   .content .writeup h3 {
-    width: 75%;
+    width: 85%;
   }
 
   .content .writeup p {
-    width: 75%;
+    width: 85%;
     font-size: 110%;
   }
 }
