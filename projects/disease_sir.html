@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="projects_pg">
+
+  <head>
+    <link href="../css/all_pages.css" rel="stylesheet">
+    <link rel="icon" href="imgs/girish_pics/favicon_img.png">
+  </head>
+
+  <body>
+    <div class="content">
+
+      <div class="profile_pics">
+        <a href="../projects.html"><img src="../imgs/icon_pics/back_button.png"></a>
+      </div>
+
+      <h1>Network SIR</h1>
+
+      <div class="writeup">
+
+        <h3>Graph Sampling and Disease Spread In Small Population Networks</h2>
+
+        <p>
+            My team and I explored a dataset and publication regarding small-population networks. The dataset contained both
+            face-to-face contact data (two individuals directly interacting) and co-presence contact data (two individuals in the 
+            same vicinity). We attempted to first assess whether or not co-presence data can be used as a proxy for face-to-face 
+            data. Co-presence, though cheaper and easier to gather, presents a much more dense network than face-to-face networks. 
+            We implemented a number of graph sub-sampling algorithms to show that co-presence data still encodes the face-to-face
+            graph structure, and can thus be successfully used as a proxy. We decided upon the Metropolis-Hastings sampling 
+            algorithm as it provided a non-naive sampling approach at relatively fast compute, while maintaining graph structure.
+            <br><br>
+        </p> 
+
+        <table class="proj_img_table">
+          <tr>
+
+            <td style="vertical-align: bottom;">
+              <figure>
+                <img src="../imgs/project_pics/sir_f2f.png">
+                <figcaption><p>F2F Graph Sampling</p></figcaption>
+              </figure>
+            </td>
+
+            <td style="vertical-align: bottom;">
+                <figure>
+                  <img src="../imgs/project_pics/sir_co.png">
+                  <figcaption><p>Co-Presence Graph Sampling</p></figcaption>
+                </figure>
+              </td>
+          </tr>
+        </table>
+
+        <p>
+            The below imgs show the comparison of graph size metrics (density, volume, etc.) for F2f and Co-presence networks. 
+            The image on the right shows that once the graphs are subsampled, the co-presence network holds similar network 
+            topology to that of the face-to-face network.
+        </p> 
+
+        <table class="proj_img_table">
+          <tr>
+            <td style="vertical-align: bottom;">
+              <figure>
+                <img src="../imgs/project_pics/sir_graph_size.png">
+                <figcaption><p>F2F vs Co-P Network Size</p></figcaption>
+              </figure>
+            </td>
+
+            <td style="vertical-align: bottom;">
+                <figure>
+                    <img src="../imgs/project_pics/sir_graph_struct.png">
+                    <figcaption><p>F2F vs Sampled Co-P Graph Structure</p></figcaption>
+                </figure>
+            </td>
+          </tr>
+        </table>
+
+        <p>
+            We then apply these subsampled graphs to SIR (Susceptible, Infectious, Recovered) disease spread model and explore a 
+            number of vaccination schemes. The baseline SIR model, with no vaccination, can be seen below. We further observe 
+            that co-presence, given the data, can represent f2f activity in an SIR with fair accuracy.
+        </p> 
+
+        <table class="proj_img_table">
+          <tr>
+            <td style="vertical-align: bottom;">
+              <figure>
+                <img src="../imgs/project_pics/sir_baseline.png">
+                <figcaption><p>F2F vs Co-P Network Size</p></figcaption>
+              </figure>
+            </td>
+
+            <td style="vertical-align: bottom;">
+                <figure>
+                </figure>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: bottom;">
+              <figure>
+                <img src="../imgs/project_pics/sir_rec_f2f.png">
+                <figcaption><p>Recovered nodes in F2F Data</p></figcaption>
+              </figure>
+            </td>
+
+            <td style="vertical-align: bottom;">
+                <figure>
+                    <img src="../imgs/project_pics/sir_rec_co.png">
+                    <figcaption><p>Recovered nodes in Co-P Data</p></figcaption>
+                </figure>
+            </td>
+          </tr>
+        </table>
+
+        <p>
+            We finally analyze vaccination in both F2F and Co-Presence networks. We iterate over no vaccination, random 
+            vaccination, and vaccination of highly-connected nodes. We report for both F2F and Co-Presence data, that 
+            vaccinating nodes with the most connections is the most beneficial scheme. This, of course is a scenario in which 
+            highly-connected individuals are known and there is also not enough vaccines for the entire graph-population. 
+        </p> 
+
+        <table class="proj_img_table">  
+            <tr>
+                <td style="vertical-align: bottom;">
+                <figure>
+                    <img src="../imgs/project_pics/sir_vax_f2f.png">
+                    <figcaption><p>Vaccination in F2F Networks</p></figcaption>
+                </figure>
+                </td>
+
+                <td style="vertical-align: bottom;">
+                <figure>
+                    <img src="../imgs/project_pics/sir_vax_co.png">
+                    <figcaption><p>Vaccination in Co-P Networks</p></figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            This work mirrors some of the early work used for analyzing the COVID-19 pandemic, and provides a base-level insight
+            for how information and disease propagates through a graph. The vaccination analysis further corroborates known findings
+            regarding disease prevention. The SIR model, and similar models have been thoroughly studied recently with the COVID-19
+            pandemic. 
+        </p> 
+
+        <h3>Additional Material</h2>
+        <p>
+            <a href="http://www.sociopatterns.org/publications/can-co-location-be-used-as-a-proxy-for-face-to-face-contacts/" class="purple">Original Publication</a>
+            <br>
+            <a href="http://www.sociopatterns.org/datasets/co-location-data-for-several-sociopatterns-data-sets/" class="purple">Dataset</a>
+        </p>
+
+        <h3>Collaborators</h2>
+        <p>
+            Karros Huang, Clint Olsen, Francois Meyer
+        </p>
+
+        <br><br>
+        <br><br>
+        <br><br>
+
+
+      </div>
+
+    </div>
+  </body>
+</html>
