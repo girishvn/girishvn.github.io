@@ -343,6 +343,20 @@ body {
   width: 35%;
 }
 
+@media (max-device-width: 800px) {
+  .content .work_exp {
+    width: 90%;
+  }
+
+  .content .teach_exp {
+    width: 90%;
+  }
+
+  .content .other_aff {
+    width: 90%;
+  }
+}
+
 
 /************************* AFFILIATES ON ABOUT ME PAGE STYLING **************************/
 .content .affiliate_pics {
