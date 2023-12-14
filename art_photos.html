@@ -15,6 +15,17 @@
 
       <h1>My Media</h1>
 
+      <div class='other_info'>
+        <a href="about.html" class="white_two_tone">About</a>
+        <a href="projects.html" class="white_two_tone">Projects</a>
+        <a href="art_photos.html" class="white_two_tone">Media</a>
+        <a href="pdfs/girishcv.pdf" class="white_two_tone">CV</a>
+
+        <div class="popup" onclick="popupTextFunct()">
+          <p class = "white_two_tone">Contact</p><span class="popuptext" id="myPopup">girishvn 'at' uw 'dot' edu</span>
+        </div>
+      </div>
+
       <div class="writeup_wrapper">
       <div class="writeup">
 
@@ -82,4 +93,13 @@
     </div>
     </div>
   </body>
+
+  <script>
+    // When the user clicks on div, open the popup
+    function popupTextFunct() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+    
 </html>

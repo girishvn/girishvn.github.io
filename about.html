@@ -15,13 +15,24 @@
 
       <h1>About Me</h1>
 
+      <div class='other_info'>
+        <a href="about.html" class="white">About</a>
+        <a href="projects.html" class="white">Projects</a>
+        <a href="art_photos.html" class="white">Media</a>
+        <a href="pdfs/girishcv.pdf" class="white">CV</a>
+
+        <div class="popup" onclick="popupTextFunct()">
+          <p class = "white">Contact</p><span class="popuptext" id="myPopup">girishvn 'at' uw 'dot' edu</span>
+        </div>
+      </div>
+
       <div class="writeup_wrapper">
         <div class="writeup">
 
           <h2>Overview</h2>
           <p>
-            I am a ECE PhD student in the <a href="https://ubicomplab.cs.washington.edu/" class="blue">UbiComp Lab</a> at the 
-            <a href="https://www.washington.edu/" class="blue">University of Washington</a>. My research focuses on leveraging 
+            I am a ECE PhD student in the <a href="https://ubicomplab.cs.washington.edu/" class="white">UbiComp Lab</a> at the 
+            <a href="https://www.washington.edu/" class="white">University of Washington</a>. My research focuses on leveraging 
             ubiquitous hardware in order to enable equitable and accessible health solutions. This entails the use of artificial 
             intelligence, signal processing, and embedded devices, among other technologies.
 
@@ -35,7 +46,7 @@
             <table class="work_exp">
               <tr>
                 <td><img src="imgs/affiliate_pics/ubicomplab.png"></td>
-                <td><p><a href="https://octoml.ai/" class="blue">UW Research Lab</a></p></td>
+                <td><p><a href="https://octoml.ai/" class="white">UW Research Lab</a></p></td>
                 <td><p>PhD Student / Researcher</p></td>
                 <td><p><i>Sept. 2020 - Present</i></p></td>
               </tr>
@@ -49,14 +60,14 @@
 
               <tr>
                 <td><img src="imgs/affiliate_pics/uplinq.png"></td>
-                <td><p><a href="https://uplinq.ai/" class="blue">Machine Learning Team</a></p></td>
+                <td><p><a href="https://uplinq.ai/" class="white">Machine Learning Team</a></p></td>
                 <td><p>Consultant</p></td>
                 <td><p><i>Apr. 2022 - Apr. 2023</i></p></td>
               </tr>
 
               <tr>
                 <td><img src="imgs/affiliate_pics/octoml.png"></td>
-                <td><p><a href="https://octoml.ai/" class="blue">Machine Learning Systems Team</a></p></td>
+                <td><p><a href="https://octoml.ai/" class="white">Machine Learning Systems Team</a></p></td>
                 <td><p>Research Intern</p></td>
                 <td><p><i>July 2021 - Oct. 2021</i></p></td>
               </tr>
@@ -64,10 +75,10 @@
 
           <p>
             Other experience:
-            <a href="https://www.colorado.edu/lab/hearlab/" class="blue">Hearing Research Lab</a>,
-            <a href="https://www.qualcomm.com/" class="blue">Qualcomm</a>,
-            <a href="https://www.medtronic.com/us-en/index.html" class="blue">Medtronic</a>,
-            <a href="http://correll.cs.colorado.edu/" class="blue">Correll Lab</a><br>
+            <a href="https://www.colorado.edu/lab/hearlab/" class="white">Hearing Research Lab</a>,
+            <a href="https://www.qualcomm.com/" class="white">Qualcomm</a>,
+            <a href="https://www.medtronic.com/us-en/index.html" class="white">Medtronic</a>,
+            <a href="http://correll.cs.colorado.edu/" class="white">Correll Lab</a><br>
           </p>
 
 
@@ -76,7 +87,7 @@
           <table class="teach_exp">
             <tr>
               <td><img src="imgs/affiliate_pics/gix.png"></td>
-              <td><p><a href="https://gixnetwork.org/community/outreach-programs/access-computing/" class="blue">GIX ACSP</a></p></td>
+              <td><p><a href="https://gixnetwork.org/community/outreach-programs/access-computing/" class="white">GIX ACSP</a></p></td>
               <td><p>Research Mentor</p></td>
               <td><p><i>Summer 2022</i></p></td>
             </tr>
@@ -111,7 +122,7 @@
           <table class="other_aff">
             <tr>
               <td><img src="imgs/affiliate_pics/mamabird.png"></td>
-              <td><p><a href="https://www.mamabird.com/" class="blue">University of Colorado Mamabird Ultimate</a></p></td>
+              <td><p><a href="https://www.mamabird.com/" class="white">University of Colorado Mamabird Ultimate</a></p></td>
               <td><p>Team Member</p></td>
               <td><p><i>Aug. 2014 - May 2019</i></p></td>
             </tr>
@@ -119,7 +130,7 @@
 
             <tr>
               <td><img src="imgs/affiliate_pics/ima.png"></td>
-              <td><p><a href="http://imakarate.com/" class="blue">International Martial Arts Association Shotokan Karate</a></p></td>
+              <td><p><a href="http://imakarate.com/" class="white">International Martial Arts Association Shotokan Karate</a></p></td>
               <td><p>1st Degree Black Belt</p></td>
               <td><p><i>Mar. 2003 - May 2014</i></p></td>
             </tr>
@@ -129,4 +140,13 @@
       </div>
     </div>
   </body>
+
+  <script>
+    // When the user clicks on div, open the popup
+    function popupTextFunct() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
 </html>

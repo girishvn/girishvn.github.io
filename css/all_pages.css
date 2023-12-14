@@ -103,6 +103,14 @@ a:visited {
   color: #FFFFFF;
 }
 
+.white_two_tone {
+  color: #FFFFFF;
+}
+
+.white_two_tone:hover {
+  color: #AAAAAA;
+}
+
 /* BODY STYLING */
 body {
   top: 5%;

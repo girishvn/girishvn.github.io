@@ -15,6 +15,17 @@
 
       <h1>Projects</h1>
 
+      <div class='other_info'>
+        <a href="about.html" class="white">About</a>
+        <a href="projects.html" class="white">Projects</a>
+        <a href="art_photos.html" class="white">Media</a>
+        <a href="pdfs/girishcv.pdf" class="white">CV</a>
+
+        <div class="popup" onclick="popupTextFunct()">
+          <p class = "white">Contact</p><span class="popuptext" id="myPopup">girishvn 'at' uw 'dot' edu</span>
+        </div>
+      </div>
+
       <div class="writeup_wrapper">
         <div class="writeup">
 
@@ -26,12 +37,12 @@
 
                 <div class="proj_img">
                   <a href="https://girishvn.github.io/BigSmall/"><img src="imgs/project_pics/bigsmall_icon.png"></a>
-                  <div class="fig_cap"><p><a href="https://girishvn.github.io/BigSmall/" class="purple">BigSmall (WACV '24)</a></p></div>
+                  <div class="fig_cap"><p><a href="https://girishvn.github.io/BigSmall/" class="white">BigSmall (WACV '24)</a></p></div>
                 </div>
 
                 <div class="proj_img">
                   <a href="projects/work_in_progress.html"><img src="imgs/project_pics/radar_ppg_icon.jpg"></a>
-                  <div class="fig_cap"><p><a href="projects/work_in_progress.html" class="purple">mmVitals</a></p></div>
+                  <div class="fig_cap"><p><a href="projects/work_in_progress.html" class="white">mmVitals</a></p></div>
                 </div>
 
               </div>
@@ -40,12 +51,12 @@
 
                 <div class="proj_img">
                   <a href="https://github.com/ubicomplab/rPPG-Toolbox"><img src="imgs/project_pics/rppg_toolbox_icon.jpg"></a>
-                  <div class="fig_cap"><p><a href="https://github.com/ubicomplab/rPPG-Toolbox" class="purple">rPPG-Toolbox (NeurIPS '23)</a></p></div>
+                  <div class="fig_cap"><p><a href="https://github.com/ubicomplab/rPPG-Toolbox" class="white">rPPG-Toolbox (NeurIPS '23)</a></p></div>
                 </div>
 
                 <div class="proj_img">
                   <a href="projects/utvm_hw_accel.html"><img src="imgs/project_pics/uVita_icon.jpg"></a>
-                  <div class="fig_cap"><p><a href="projects/utvm_hw_accel.html" class="purple">uAccelerator</a></p></div>
+                  <div class="fig_cap"><p><a href="projects/utvm_hw_accel.html" class="white">uAccelerator</a></p></div>
                 </div>
 
               </div>
@@ -54,12 +65,12 @@
 
                 <div class="proj_img">
                   <a href="projects/urosound.html"><img src="imgs/project_pics/urosound_icon.jpg"></a>
-                  <div class="fig_cap"><p><a href="projects/urosound.html" class="purple">UroSound (EMBC '22)</a></p></div>
+                  <div class="fig_cap"><p><a href="projects/urosound.html" class="white">UroSound (EMBC '22)</a></p></div>
                 </div>
 
                 <div class="proj_img">
                   <a href="projects/maskflow.html"><img src="imgs/project_pics/maskflow_icon.jpg"></a>
-                  <div class="fig_cap"><p><a href="projects/maskflow.html" class="purple">MaskFlow</a></p></div>
+                  <div class="fig_cap"><p><a href="projects/maskflow.html" class="white">MaskFlow</a></p></div>
                 </div>
 
               </div>
@@ -76,12 +87,12 @@
 
                 <div class="proj_img">
                   <a href="https://cse512-22sp.pages.cs.washington.edu/BeadPlots/"><img src="imgs/project_pics/beadplot_icon.jpg"></a>
-                  <div class="fig_cap"><p><a href="https://cse512-22sp.pages.cs.washington.edu/BeadPlots/" class="purple">BeadPlots</a></p></div>
+                  <div class="fig_cap"><p><a href="https://cse512-22sp.pages.cs.washington.edu/BeadPlots/" class="white">BeadPlots</a></p></div>
                 </div>
 
                 <div class="proj_img">
                   <a href="projects/vboard.html"><img src="imgs/project_pics/vboard_icon.jpg"></a>
-                  <div class="fig_cap"><p><a href="projects/vboard.html" class="purple">vBoard</a></p></div>
+                  <div class="fig_cap"><p><a href="projects/vboard.html" class="white">vBoard</a></p></div>
                 </div>
 
               </div>
@@ -90,7 +101,7 @@
 
                 <div class="proj_img">
                   <a href="https://cse512-22sp.pages.cs.washington.edu/No-Fly-Zone/"><img src="imgs/project_pics/noflyzone_icon.jpg"></a>
-                  <div class="fig_cap"><p><a href="https://cse512-22sp.pages.cs.washington.edu/No-Fly-Zone/" class="purple">NoFlyZone</a></p></div>
+                  <div class="fig_cap"><p><a href="https://cse512-22sp.pages.cs.washington.edu/No-Fly-Zone/" class="white">NoFlyZone</a></p></div>
                 </div>
                 
 
@@ -100,7 +111,7 @@
 
                 <div class="proj_img">
                   <a href="projects/disease_sir.html"><img src="imgs/project_pics/sir_icon.jpg"></a>
-                  <div class="fig_cap"><p><a href="projects/disease_sir.html" class="purple">NetworkSIR</a></p></div>
+                  <div class="fig_cap"><p><a href="projects/disease_sir.html" class="white">NetworkSIR</a></p></div>
                 </div>
 
               </div>
@@ -112,4 +123,13 @@
       </div>
     </div>
   </body>
+
+  <script>
+    // When the user clicks on div, open the popup
+    function popupTextFunct() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
 </html>
