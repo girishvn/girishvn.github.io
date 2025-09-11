@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presenting [LSM](https://iclr.cc/virtual/2025/poster/27713) at ICLR '25. Excited to explore Singapore! 
+Presenting [LSM](https://iclr.cc/virtual/2025/poster/27713) at ICLR '25. Excited to explore Singapore!

@@ -8,10 +8,11 @@ nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
+
 **A subset of publications, relevant to my current interests, are listed below.**  
 The full list of my publications can be found on [Google Scholar](https://scholar.google.com/citations?user=uNbzzSgAAAAJ&hl=en&oi=ao).
 
-\* *denotes equal contribution.*
+\* _denotes equal contribution._
 
 <!-- Bibsearch Feature -->
 

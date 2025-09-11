@@ -8,13 +8,13 @@ category: work
 related_publications: true
 ---
 
-
 Clinical vital signs (pulse signals, respiratory signals, temperature, blood pressure, etc.) are important indicators of a person's physiological function and health. Historically, these are measured by a trained profession using a specialty contact equipment (e.g., pulse oximeter, blood pressure cuff, etc.) during in-person clinical visits. As such, these methods act only as spot checks and only scale to areas with robust healthcare resrouces. As a result non-contact vital sensing, which enables continuous, convenient, monitoring without the need for contact sensors, is becoming increasingly important. This form of technology holds particular value in telemedicine, public health, and patient monitoring in clinical and home settings, offering scalable options for longitudinal tracking, and improved accessibility to healthcare.
 
-
 <!-- RPPG Intro and RPPG Toolbox -->
+
 ### Remote Photoplethysmography (RPPG)
-Remote photoplethysmography (rPPG) is a method of non-contact pulse sensing. Specifically rPPG captures the blood volume pulse (BVP) from a camera by detecting subtle changes in skin color (micro-blush) associated with  pulsatile blood flow. While traditionally done with signal-processing based methods, the current state-of-the-art relies on deep neural networks trained on video data.
+
+Remote photoplethysmography (rPPG) is a method of non-contact pulse sensing. Specifically rPPG captures the blood volume pulse (BVP) from a camera by detecting subtle changes in skin color (micro-blush) associated with pulsatile blood flow. While traditionally done with signal-processing based methods, the current state-of-the-art relies on deep neural networks trained on video data.
 
 To promote the growth of the field we released [rPPG Toolbox](https://github.com/ubicomplab/rPPG-Toolbox). This open source repository hosts the infrastructure needed to utilize **9 datasets**, leverage **7 statistical models**, and train **10 state-of-the-art neural models**. The impact of this work is illustrated by the github repositories' **750+ Stars** and **190+ Forks**. The repository has been leveraged by **130+** published works. This work was featured in out NeurIPS'23 papge {% cite liu2023rppg %}.
 
@@ -40,8 +40,8 @@ To promote the growth of the field we released [rPPG Toolbox](https://github.com
     </div>
 </div>
 
-
 ### BigSmall: More Capable Non-Contact Sensing
+
 While most state-of-the-art non-contact physiological sensing models focus on a single target signal there are known correlations between physiological signals (e.g., respiratory sinus arrhythmia correlate heart and respiratory signals). A such, a model should be able to leverage these correlations to build a more general representation and improve performance.
 
 In our WACV'24 paper we introduce BigSmall {% cite narayanswamy2024bigsmall %}., an efficient network architecture for multi-task physiological sensing. BigSmall concurrently derives photoplethysmography (pulse), respiration, and action unit signals from videos of the face.
@@ -71,12 +71,11 @@ Experimental results demonstrate that BigSmall significantly reduces upon the co
     </div>
 </div>
 
-
 ### More Subtle Vital Signs
+
 Ubiqutous solutions for determining blood pressure has been a long standing problem that has has significant implications for public health.
 Towards this, we explored the feasibility of sensing blood pressure via an rPPG-like model. To build a dataset appropriate for this analysis we collected video recordings (appropriate for rPPG) from 134 cardiac patients (a total of 143 visits) from UW Medicine. These recordings were paired with simultaneous collection of pulse signal/rate and blood oxygen saturation via contact PPG, respiratory rate/signal via thoracic band, single-lead ECG. Cuff-based blood pressure was collected pre and post each recording. Data was paired with demographic records and clinical history. The data collection and all analysis was IRB approved.
 Our initial BP model indicated that rPPG-like methods could be leveraged to more accurately estimate BP and detect hypertension, but more work (are larger studies) are need to make such methods truly ubiqutous. Please seee the following papers for more results {% cite curran2023camera curran2025estimating %}.
-
 
 <div class="row justify-content-sm-center">
     <div class="row">
